@@ -1,0 +1,37 @@
+/* ============================================================
+   SULIS · SPACING, RADII, MOTION
+   Soft rounded shape language. 4px base grid.
+   ============================================================ */
+:root {
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 48px;
+  --sp-10: 64px;
+  --sp-11: 80px;
+
+  /* radii — soft, generous */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 28px;
+  --r-2xl: 36px;
+  --r-pill: 999px;
+
+  /* container widths */
+  --w-screen: 402px;   /* iPhone design width */
+  --w-content: 1120px; /* marketing max       */
+
+  /* motion — calm, water-like easing */
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft:   cubic-bezier(0.4, 0.0, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur-med:  260ms;
+  --dur-slow: 440ms;
+}

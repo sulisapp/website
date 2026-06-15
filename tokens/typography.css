@@ -1,0 +1,43 @@
+/* ============================================================
+   SULIS · TYPOGRAPHY TOKENS
+   Instrument Serif (editorial display) · Hanken Grotesk (UI)
+   · Geist Mono (data, labels, units)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Geist+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-display: 'Instrument Serif', ui-serif, Georgia, serif;
+  --font-sans: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* type scale (px) */
+  --t-display-xl: 76px;   /* hero serif moments      */
+  --t-display-l:  56px;
+  --t-display-m:  40px;
+  --t-title-xl:   32px;   /* sans screen titles      */
+  --t-title-l:    26px;
+  --t-title-m:    21px;
+  --t-body-l:     18px;
+  --t-body:       16px;
+  --t-body-s:     14px;
+  --t-caption:    13px;
+  --t-micro:      11px;   /* mono eyebrows / units   */
+
+  /* weights */
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-semibold:600;
+  --w-bold:    700;
+
+  /* line-heights */
+  --lh-tight:  1.04;
+  --lh-snug:   1.18;
+  --lh-normal: 1.45;
+  --lh-loose:  1.6;
+
+  /* tracking */
+  --tr-tight:  -0.02em;
+  --tr-normal: 0;
+  --tr-label:  0.08em;   /* mono uppercase eyebrows */
+  --tr-wide:   0.16em;
+}

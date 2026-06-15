@@ -1,0 +1,137 @@
+/* ============================================================
+   SULIS · COLOR TOKENS  —  "Thermal"
+   Warm mineral surfaces + thermal-spring teal + terracotta.
+   All hues share low, harmonious chroma. oklch throughout.
+   ============================================================ */
+
+:root {
+  /* ---- Base palette: Sand (warm neutral, hue ~78) ---- */
+  --sand-50:  oklch(0.987 0.005 80);
+  --sand-100: oklch(0.971 0.007 80);
+  --sand-150: oklch(0.952 0.009 79);
+  --sand-200: oklch(0.922 0.010 78);
+  --sand-300: oklch(0.872 0.012 76);
+  --sand-400: oklch(0.735 0.013 74);
+  --sand-500: oklch(0.585 0.013 72);
+  --sand-600: oklch(0.470 0.013 70);
+  --sand-700: oklch(0.375 0.013 66);
+  --sand-800: oklch(0.285 0.012 62);
+  --sand-900: oklch(0.222 0.012 58);
+  --sand-950: oklch(0.165 0.011 56);
+
+  /* ---- Spring: thermal teal-green (hue ~192), the healing water ---- */
+  --spring-50:  oklch(0.962 0.022 195);
+  --spring-100: oklch(0.922 0.038 194);
+  --spring-200: oklch(0.852 0.062 193);
+  --spring-300: oklch(0.772 0.082 192);
+  --spring-400: oklch(0.690 0.092 192);
+  --spring-500: oklch(0.602 0.092 192);
+  --spring-600: oklch(0.520 0.084 193);
+  --spring-700: oklch(0.438 0.070 195);
+  --spring-800: oklch(0.360 0.054 197);
+  --spring-900: oklch(0.292 0.040 199);
+
+  /* ---- Clay: terracotta warmth (hue ~42) ---- */
+  --clay-50:  oklch(0.962 0.020 50);
+  --clay-100: oklch(0.922 0.040 48);
+  --clay-200: oklch(0.852 0.072 46);
+  --clay-300: oklch(0.772 0.100 44);
+  --clay-400: oklch(0.702 0.122 42);
+  --clay-500: oklch(0.642 0.132 40);
+  --clay-600: oklch(0.566 0.126 38);
+  --clay-700: oklch(0.478 0.106 36);
+
+  /* ---- Supporting data-viz hues (calm, shared chroma) ---- */
+  --amber:  oklch(0.760 0.110 78);   /* energy / metabolism      */
+  --dusk:   oklch(0.640 0.078 268);  /* sleep / recovery (blue)  */
+  --moss:   oklch(0.640 0.090 150);  /* readiness / positive     */
+
+  /* ---- Semantic ---- */
+  --success: oklch(0.620 0.090 150);
+  --warning: oklch(0.760 0.110 78);
+  --danger:  oklch(0.585 0.150 28);
+
+  /* =========================================================
+     SEMANTIC ALIASES — LIGHT (default)
+     ========================================================= */
+  --bg:             var(--sand-50);
+  --bg-spring:      oklch(0.972 0.018 195);   /* tinted app bg option */
+  --surface:        oklch(0.997 0.003 80);
+  --surface-2:      var(--sand-100);
+  --surface-3:      var(--sand-150);
+  --surface-sunken: var(--sand-150);
+  --surface-invert: var(--sand-900);
+
+  --border:         var(--sand-200);
+  --border-strong:  var(--sand-300);
+  --hairline:       oklch(0.222 0.012 58 / 0.08);
+
+  --text:           var(--sand-900);
+  --text-2:         var(--sand-600);
+  --text-3:         var(--sand-500);
+  --text-invert:    var(--sand-50);
+
+  --spring:         var(--spring-500);
+  --spring-press:   var(--spring-600);
+  --spring-soft:    var(--spring-50);
+  --spring-soft-bd: var(--spring-100);
+  --on-spring:      oklch(0.99 0.01 195);
+
+  --clay:           var(--clay-500);
+  --clay-soft:      var(--clay-50);
+  --clay-soft-bd:   var(--clay-100);
+  --on-clay:        oklch(0.99 0.01 50);
+
+  /* warm-tinted elevation */
+  --shadow-xs: 0 1px 2px oklch(0.30 0.03 60 / 0.05);
+  --shadow-sm: 0 1px 2px oklch(0.30 0.03 60 / 0.06), 0 2px 6px oklch(0.30 0.03 60 / 0.05);
+  --shadow-md: 0 2px 6px oklch(0.30 0.03 60 / 0.05), 0 8px 24px -6px oklch(0.30 0.03 60 / 0.12);
+  --shadow-lg: 0 4px 12px oklch(0.30 0.03 60 / 0.06), 0 20px 48px -10px oklch(0.30 0.03 60 / 0.16);
+  --shadow-spring: 0 6px 20px -6px oklch(0.602 0.092 192 / 0.40);
+  --shadow-clay:   0 6px 20px -6px oklch(0.642 0.132 40 / 0.38);
+}
+
+/* =========================================================
+   SEMANTIC ALIASES — DARK
+   Deep warm charcoal with a whisper of spring at depth.
+   ========================================================= */
+[data-theme="dark"] {
+  --bg:             oklch(0.168 0.010 70);
+  --bg-spring:      oklch(0.180 0.016 200);
+  --surface:        oklch(0.214 0.012 74);
+  --surface-2:      oklch(0.250 0.013 76);
+  --surface-3:      oklch(0.288 0.014 78);
+  --surface-sunken: oklch(0.140 0.009 68);
+  --surface-invert: var(--sand-100);
+
+  --border:         oklch(0.300 0.012 74);
+  --border-strong:  oklch(0.360 0.013 76);
+  --hairline:       oklch(0.98 0.01 80 / 0.09);
+
+  --text:           oklch(0.962 0.006 80);
+  --text-2:         oklch(0.740 0.012 78);
+  --text-3:         oklch(0.600 0.013 76);
+  --text-invert:    var(--sand-900);
+
+  --spring:         var(--spring-400);
+  --spring-press:   var(--spring-300);
+  --spring-soft:    oklch(0.300 0.040 196);
+  --spring-soft-bd: oklch(0.360 0.050 196);
+  --on-spring:      oklch(0.15 0.02 198);
+
+  --clay:           var(--clay-400);
+  --clay-soft:      oklch(0.320 0.055 42);
+  --clay-soft-bd:   oklch(0.380 0.065 42);
+  --on-clay:        oklch(0.16 0.02 44);
+
+  --amber:  oklch(0.800 0.110 80);
+  --dusk:   oklch(0.720 0.080 266);
+  --moss:   oklch(0.720 0.090 150);
+
+  --shadow-xs: 0 1px 2px oklch(0 0 0 / 0.30);
+  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.34), 0 2px 6px oklch(0 0 0 / 0.30);
+  --shadow-md: 0 2px 6px oklch(0 0 0 / 0.34), 0 8px 24px -6px oklch(0 0 0 / 0.46);
+  --shadow-lg: 0 4px 12px oklch(0 0 0 / 0.38), 0 20px 48px -10px oklch(0 0 0 / 0.55);
+  --shadow-spring: 0 6px 22px -6px oklch(0.690 0.092 192 / 0.45);
+  --shadow-clay:   0 6px 22px -6px oklch(0.702 0.122 42 / 0.42);
+}
