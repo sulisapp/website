@@ -1,0 +1,22 @@
+# Deploys this repo to the Cloudflare Pages project "sulis" (sulisapp.com)
+# on every push to main. Requires one repo secret:
+#   CLOUDFLARE_API_TOKEN — create at dash.cloudflare.com → My Profile →
+#   API Tokens → Create Token → "Edit Cloudflare Workers/Pages" template
+#   (needs Account · Cloudflare Pages · Edit), then add it under
+#   Settings → Secrets and variables → Actions in this repo.
+name: Deploy to Cloudflare Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: b65d7b0439ae384185ab8d304d0e8378
+          command: pages deploy . --project-name=sulis
