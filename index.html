@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'" />
+  <meta name="referrer" content="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sulis — your supplements, sleep, and training, finally connected</title>
-  <meta name="description" content="Sulis reads your Apple Health data, learns your supplement stack, and quietly explains what's actually moving the needle. No rings to close. No guilt. Just clarity." />
-  <meta property="og:title" content="Sulis — a calm, connected health intelligence" />
-  <meta property="og:description" content="Supplements, sleep, training, and recovery — connected, and explained, by one calm intelligence." />
+  <title>Sulis — a calm health intelligence for iPhone</title>
+  <meta name="description" content="Sulis unifies your supplements, Apple Health, workouts, recovery, and bloodwork, computes a daily readiness score from your own baselines, and writes a plain-language daily read. Private by design. Free, no account required." />
+  <meta property="og:title" content="Sulis — a calm health intelligence" />
+  <meta property="og:description" content="Supplements, sleep, training, recovery, and bloodwork — connected, and quietly explained. Private by design." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sulisapp.com" />
   <meta name="theme-color" content="#0fceb8" />
@@ -28,10 +30,14 @@
         <span class="word">Sulis</span>
       </a>
       <div class="nav-links">
-        <a href="#science">Science</a>
-        <a href="#stack">The stack</a>
-        <a href="#pricing">Pricing</a>
-        <a class="btn btn-primary btn-sm" href="#download"><i data-lucide="apple"></i> Get the app</a>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#screens">Screens</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-primary btn-sm" href="#download">
+          <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          Get the app
+        </a>
       </div>
     </div>
   </nav>
@@ -41,59 +47,153 @@
     <div class="ripple"></div>
     <div class="wrap hero-grid">
       <div>
-        <span class="pill"><i data-lucide="sparkles"></i> AI health intelligence</span>
-        <h1>Your supplements, sleep, and training — <em>finally connected.</em></h1>
-        <p>Sulis reads your Apple Health data, learns your stack, and quietly explains what's actually moving the needle. No rings to close. No guilt. Just clarity.</p>
+        <span class="pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+          A calm health intelligence
+        </span>
+        <h1>Your health, finally <em>understood.</em></h1>
+        <p>Sulis quietly unifies your supplements, Apple Health, workouts, recovery, and bloodwork — then writes a plain-language daily read so you actually know how you are. No rings to close. No guilt. Just clarity.</p>
         <div class="hero-cta">
-          <a class="btn btn-ink btn-lg" href="#download"><i data-lucide="apple"></i> Download for iPhone</a>
-          <a class="btn btn-ghost btn-lg" href="#science">See how it works</a>
+          <a class="store-badge" href="#" aria-label="Download on the App Store (coming soon)">
+            <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span>
+              <span class="sb-top">Download on the</span><br>
+              <span class="sb-main">App Store</span>
+            </span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
         </div>
         <div class="sources">
-          <span><i data-lucide="heart-pulse" style="color:var(--clay)"></i> Apple Health</span>
-          <span><i data-lucide="watch" style="color:var(--dusk)"></i> Apple Watch</span>
-          <span><i data-lucide="activity" style="color:var(--moss)"></i> Whoop &amp; Oura</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--clay)"><path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg> Apple Health</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--dusk)"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 6 8.5 3h7L15 6M9 18l-.5 3h7l-.5-3"/></svg> Apple Watch</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--moss)"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg> Oura &amp; WHOOP</span>
         </div>
       </div>
       <div class="phones">
-        <div class="phone"><img src="./assets/today.png" alt="Sulis Today screen" /></div>
-        <div class="phone phone-2"><img src="./assets/health-dark.png" alt="Sulis Health screen" /></div>
+        <div class="phone"><img src="./assets/today.png" alt="Sulis Today screen showing the daily readiness score and daily read" /></div>
+        <div class="phone phone-2"><img src="./assets/health-dark.png" alt="Sulis Health screen showing HRV, resting heart rate and sleep trends" /></div>
       </div>
     </div>
   </header>
 
-  <!-- connective tissue -->
-  <section class="band-dark" id="science">
+  <!-- connective tissue / quote band -->
+  <section class="band-dark">
     <div class="tex"></div>
     <div class="wrap">
       <div class="eyebrow">The connective tissue</div>
-      <p class="quote">"Your HRV runs 12% higher on nights you take Magnesium and sleep past 7 hours. I'd keep that evening dose."</p>
-      <p class="by">— Sulis, after noticing a pattern across 6 weeks of your data</p>
+      <p class="quote">"Your HRV runs 12% higher on nights you take magnesium and sleep past seven hours. I'd keep that evening dose."</p>
+      <p class="by">— Sulis, after noticing a pattern across six weeks of your own data</p>
     </div>
   </section>
 
   <!-- features -->
-  <section class="section" id="stack">
+  <section class="section" id="features">
     <div class="wrap">
       <div class="section-head">
-        <div class="eyebrow">How it works</div>
+        <div class="eyebrow">What Sulis does</div>
         <h2>Less tracking. More understanding.</h2>
+        <p>Everything that shapes how you feel, gathered in one calm place — and quietly explained.</p>
       </div>
       <div class="features">
         <article class="feature">
-          <div class="ic" style="background:color-mix(in oklch, var(--spring), transparent 86%)"><i data-lucide="combine" style="color:var(--spring)"></i></div>
-          <h3>Everything in one place</h3>
-          <p>Your stack, workouts, sleep, and vitals — pulled together automatically, so the full picture lives in a single calm view.</p>
+          <div class="ic" style="background:color-mix(in oklch, var(--spring), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--spring)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>A daily readiness score</h3>
+          <p>Sulis learns your own baselines from HRV, resting heart rate, sleep, respiratory rate, and wrist temperature, then scores your readiness for the day — time-of-day aware, never one-size-fits-all.</p>
         </article>
         <article class="feature">
-          <div class="ic" style="background:color-mix(in oklch, var(--clay), transparent 86%)"><i data-lucide="sparkles" style="color:var(--clay)"></i></div>
-          <h3>AI that explains</h3>
-          <p>Sulis surfaces what's working, flags interactions, and tells you why — in plain language, only when it matters.</p>
+          <div class="ic" style="background:color-mix(in oklch, var(--clay), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2"><path d="m12 3 1.9 4.6L18.5 9l-3.3 3.4.8 4.8L12 14.9 8 17.2l.8-4.8L5.5 9l4.6-1.4z"/></svg>
+          </div>
+          <h3>The daily read</h3>
+          <p>A short, plain-language note on how you are and why — running on Apple Intelligence on-device, or with your own Claude key. Insight only when it matters, never noise.</p>
         </article>
         <article class="feature">
-          <div class="ic" style="background:color-mix(in oklch, var(--dusk), transparent 86%)"><i data-lucide="clock" style="color:var(--dusk)"></i></div>
-          <h3>Perfect timing</h3>
-          <p>Doses scheduled around your training and sleep. Sulis nudges you at the right moment, then gets out of the way.</p>
+          <div class="ic" style="background:color-mix(in oklch, var(--spring), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--spring)" stroke-width="2"><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3M9 12h6M9 16h4"/></svg>
+          </div>
+          <h3>Your supplement stack</h3>
+          <p>Track everything you take, schedule doses around your training and sleep, get gentle reminders, and see interaction flags — all folded into the same readiness picture.</p>
         </article>
+        <article class="feature">
+          <div class="ic" style="background:color-mix(in oklch, var(--clay), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--clay)" stroke-width="2"><path d="M9 3v6l-4.5 8a2.5 2.5 0 0 0 2.2 3.7h10.6A2.5 2.5 0 0 0 19.5 17L15 9V3M9 3h6M8 14h8"/></svg>
+          </div>
+          <h3>Bloodwork intelligence</h3>
+          <p>Import your lab PDFs and Sulis reads the markers for you, canonicalizes the names, tracks trends over time, and shows where each value sits — in language a human can follow.</p>
+        </article>
+        <article class="feature">
+          <div class="ic" style="background:color-mix(in oklch, var(--dusk), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--dusk)" stroke-width="2"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg>
+          </div>
+          <h3>Apple Health &amp; wearables</h3>
+          <p>Connect Apple Health, Apple Fitness, Oura, and WHOOP. Workouts, recovery, steps, VO₂, and nutrition from the apps you already use flow in automatically — including a companion Apple Watch app.</p>
+        </article>
+        <article class="feature">
+          <div class="ic" style="background:color-mix(in oklch, var(--moss), transparent 86%)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--moss)" stroke-width="2"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Private by design</h3>
+          <p>Your data lives on your device and syncs only through your own iCloud. No accounts. No tracking SDKs. No servers of ours collecting your health data. The app is free — no in-app purchases.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- values strip / how it works -->
+  <section class="values section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">How it works</div>
+        <h2>Three quiet steps</h2>
+        <p>Set it up once in about two minutes, then let it run in the background.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value">
+          <div class="vn">01</div>
+          <div class="vl">Connect Apple Health and any wearables, and add what's in your supplement stack.</div>
+        </div>
+        <div class="value">
+          <div class="vn">02</div>
+          <div class="vl">Import your lab PDFs — Sulis reads your markers and starts tracking the trends.</div>
+        </div>
+        <div class="value">
+          <div class="vn">03</div>
+          <div class="vl">Each day Sulis scores your readiness from your own baselines, on-device.</div>
+        </div>
+        <div class="value">
+          <div class="vn">04</div>
+          <div class="vl">Read a calm, plain-language note on how you are — and what's actually moving the needle.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- screenshots showcase -->
+  <section class="section" id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">A look inside</div>
+        <h2>Designed to feel calm</h2>
+        <p>Warm mineral surfaces, generous space, and a single spring-teal accent — the same care, on every screen.</p>
+      </div>
+      <div class="shots">
+        <div class="shot"><img src="./assets/screenshots/iphone-1.png" alt="Sulis Today — daily readiness and the daily read" /></div>
+        <div class="shot"><img src="./assets/screenshots/iphone-2.png" alt="Sulis Stack — your supplements and dose schedule" /></div>
+        <div class="shot"><img src="./assets/screenshots/iphone-3.png" alt="Sulis Health — HRV, resting heart rate, and sleep trends" /></div>
+        <div class="shot"><img src="./assets/screenshots/iphone-4.png" alt="Sulis bloodwork — markers and trends read from your lab PDFs" /></div>
+        <div class="shot"><img src="./assets/screenshots/iphone-5.png" alt="Sulis Train — workouts and recovery" /></div>
+      </div>
+      <div class="shots-secondary">
+        <div>
+          <div class="frame-ipad"><img src="./assets/screenshots/ipad-1.png" alt="Sulis on iPad — the full health picture on a larger canvas" /></div>
+          <div class="shot-cap">Sulis on iPad</div>
+        </div>
+        <div>
+          <div class="frame-watch"><img src="./assets/screenshots/watch-1.png" alt="Sulis on Apple Watch — readiness at a glance" /></div>
+          <div class="shot-cap">Companion Apple Watch app</div>
+        </div>
       </div>
     </div>
   </section>
@@ -112,32 +212,46 @@
             <circle cx="46.5" cy="46.5" r="2.4" fill="#fff" opacity=".5"/>
           </svg>
           <h2>Find your level</h2>
-          <p>Free to start. Connect your health data and meet your spring in under two minutes.</p>
-          <a class="btn btn-primary btn-lg" href="#"><i data-lucide="apple"></i> Download Sulis</a>
+          <p>Free, with no account required and no in-app purchases. Connect your health data and meet your spring in under two minutes.</p>
+          <div class="badge-row">
+            <a class="store-badge" href="#" aria-label="Download on the App Store (coming soon)">
+              <svg viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span>
+                <span class="sb-top">Download on the</span><br>
+                <span class="sb-main">App Store</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- footer -->
-  <footer class="foot" id="pricing">
+  <footer class="foot">
     <div class="wrap foot-inner">
-      <a class="brand" href="/">
-        <svg class="mark" width="24" height="24" viewBox="0 0 100 100" aria-label="Sulis">
-          <circle cx="50" cy="50" r="46" fill="none" stroke="var(--text-2)" stroke-width="2" opacity=".4"/>
-          <circle cx="50" cy="50" r="33" fill="none" stroke="var(--text-2)" stroke-width="2.6" opacity=".6"/>
-          <circle cx="50" cy="50" r="20.5" fill="none" stroke="var(--text-2)" stroke-width="3.2" opacity=".85"/>
-          <circle cx="50" cy="50" r="8" fill="var(--text-2)"/>
-        </svg>
-        <span class="word" style="font-size:22px; color:var(--text-2)">Sulis</span>
-      </a>
-      <div class="foot-links">
-        <span>Science</span><span>Privacy</span><span>Support</span><span>© 2026 Sulis</span>
+      <div>
+        <a class="brand" href="/">
+          <svg class="mark" width="24" height="24" viewBox="0 0 100 100" aria-label="Sulis">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="var(--text-2)" stroke-width="2" opacity=".4"/>
+            <circle cx="50" cy="50" r="33" fill="none" stroke="var(--text-2)" stroke-width="2.6" opacity=".6"/>
+            <circle cx="50" cy="50" r="20.5" fill="none" stroke="var(--text-2)" stroke-width="3.2" opacity=".85"/>
+            <circle cx="50" cy="50" r="8" fill="var(--text-2)"/>
+          </svg>
+          <span class="word" style="font-size:22px; color:var(--text-2)">Sulis</span>
+        </a>
+        <p class="foot-col-tag">A calm health intelligence for iPhone, iPad, and Apple Watch. Private by design.</p>
+      </div>
+      <div>
+        <div class="foot-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:hello@sulisapp.com">hello@sulisapp.com</a>
+        </div>
+        <p class="foot-legal">© 2026 Sulis. Sulis is not a medical device and does not provide medical advice.</p>
       </div>
     </div>
   </footer>
-
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
-  <script>window.lucide && lucide.createIcons();</script>
 </body>
 </html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Sulis</title>
+  <meta name="description" content="How Sulis handles your data: health data stays on your device and in your private iCloud, with no analytics or tracking SDKs and nothing sold or shared." />
+  <meta name="theme-color" content="#0fceb8" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='none' stroke='%2329928f' stroke-width='2' opacity='.3'/%3E%3Ccircle cx='50' cy='50' r='33' fill='none' stroke='%2329928f' stroke-width='2.6' opacity='.55'/%3E%3Ccircle cx='50' cy='50' r='20.5' fill='none' stroke='%2329928f' stroke-width='3.2' opacity='.85'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%2329928f'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./site.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <svg class="mark" width="28" height="28" viewBox="0 0 100 100" aria-label="Sulis">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="var(--spring)" stroke-width="2" opacity=".30"/>
+          <circle cx="50" cy="50" r="33" fill="none" stroke="var(--spring)" stroke-width="2.6" opacity=".55"/>
+          <circle cx="50" cy="50" r="20.5" fill="none" stroke="var(--spring)" stroke-width="3.2" opacity=".85"/>
+          <circle cx="50" cy="50" r="8" fill="var(--spring)"/>
+          <circle cx="46.5" cy="46.5" r="2.4" fill="#fff" opacity=".5"/>
+        </svg>
+        <span class="word">Sulis</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap-narrow">
+      <h1>Privacy Policy</h1>
+      <p class="lede">Sulis is built so that your health data stays yours. This policy explains exactly what Sulis does and does not do with your information.</p>
+      <p class="meta">Effective 6 July 2026</p>
+    </div>
+  </header>
+
+  <main class="doc">
+    <div class="wrap-narrow">
+      <div class="callout">
+        <p><strong>The short version.</strong> Your health data lives on your device and syncs only through your own private iCloud. By default, Sulis runs no servers that collect your personal health data. There are no analytics or tracking SDKs, no advertising networks, and no accounts required to use the app. We never sell or share your health data. You can export or delete everything from inside the app at any time. (If you choose to connect an optional Sulis backend — see "Optional backend connection" below — some data is sent to that server.)</p>
+      </div>
+
+      <p>In this policy, "Sulis," "we," "us," and "our" refer to the developer of the Sulis iOS app. "You" means the person using the app. By using Sulis you agree to the practices described here.</p>
+
+      <h2>What Sulis stores, and where</h2>
+      <p>Sulis is an on-device app. The information you put into it or connect to it — your supplement stack, logged doses, workouts, recovery and vitals, nutrition, bloodwork, appointments, notes, daily readiness scores, daily reads, and (if you choose to track it) cycle information — is stored on your device.</p>
+      <p>If you are signed in to iCloud and have it enabled, this data syncs across your own Apple devices through Apple's private iCloud (CloudKit) in your personal iCloud account. This sync happens between you and Apple. By default, we do not operate servers that receive, store, or have access to this data, and we cannot read it. (This changes only if you deliberately configure an optional Sulis backend — see "Optional backend connection" below.)</p>
+      <p>Sulis does not require you to create an account with us, and we do not collect names, email addresses, or contact information through normal use of the app. (Sign in with Apple is available only for optional features and uses Apple's private relay; we do not receive your real email unless you choose to share it.)</p>
+
+      <h2>Apple Health and connected wearables</h2>
+      <p>With your permission, Sulis reads data from Apple Health — which may include heart rate variability (HRV), resting heart rate, sleep, steps, VO₂ max, respiratory rate, wrist temperature, workouts, and related metrics — and from connected services such as Apple Fitness, Oura, WHOOP, and nutrition apps you link.</p>
+      <p>This data is used solely to render your readiness score, trends, and insights inside the app. <strong>HealthKit data is never sold, never shared with third parties for advertising or marketing, and is never used for any purpose other than providing the app's features to you.</strong> You control exactly which Health categories Sulis can read in the iOS Health app or Settings, and you can revoke access at any time.</p>
+
+      <h2>Bloodwork files</h2>
+      <p>When you import a lab report (for example, a PDF), Sulis reads the markers so it can track your values over time. Imported bloodwork is stored encrypted in your private iCloud alongside your other Sulis data and stays under your control. We do not receive copies of your lab files.</p>
+
+      <h2>How AI insight works</h2>
+      <p>Sulis can generate plain-language insight in one of two ways, depending on your choice:</p>
+      <ul>
+        <li><strong>Apple Intelligence (on-device).</strong> When you use Apple Intelligence, processing happens on your device. Your health context is not sent to us.</li>
+        <li><strong>Your own Claude API key.</strong> If you choose to add a Claude API key, the relevant health context needed to generate an insight is sent directly from your device to Anthropic's API to produce that insight, and the response comes back to your device. By default these requests go from you to Anthropic — they do not pass through any server of ours, and we do not receive, log, or store them. (If you instead configure an optional Sulis backend, Ask requests are routed through that server and use the operator's AI key — see "Optional backend connection" below.) Anthropic's handling of API data is governed by their <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Privacy Policy</a> and applicable commercial terms. Sulis uses this only to generate the insight you requested and for no other purpose.</li>
+      </ul>
+      <p>Your Claude API key is stored securely in your device's Keychain and is never transmitted to us.</p>
+
+      <h2>What we do not do</h2>
+      <ul>
+        <li>We do not include third-party analytics, advertising, or tracking SDKs in the app.</li>
+        <li>We do not build advertising profiles or track you across other apps or websites.</li>
+        <li>We do not sell, rent, or trade your data.</li>
+        <li>By default, we do not operate servers that collect your personal health data. (This applies unless you deliberately connect an optional Sulis backend — see below.)</li>
+      </ul>
+      <p>This website (sulisapp.com) is a static informational site. Visiting it does not require you to provide personal information.</p>
+
+      <h2>Optional backend connection</h2>
+      <p>Sulis works fully standalone and, by default, sends none of your data to a Sulis server. Some users may choose to connect the app to an optional Sulis backend by entering a Sulis API URL in the app's Settings. This is entirely opt-in. When it is configured, the following applies:</p>
+      <ul>
+        <li><strong>Data sent to the backend.</strong> Your Apple Health metrics, sleep, and workout data are sent to the backend so it can compute insights, along with your Sign in with Apple token used to authenticate you.</li>
+        <li><strong>Wearable connections.</strong> When you connect a wearable service, the OAuth token exchange transits the server so the connection can complete. The server relays the exchange and does not retain your wearable access tokens.</li>
+        <li><strong>Backend-routed Ask.</strong> When the backend is configured, Ask and insight requests are routed through it and use the backend operator's AI provider key rather than a key on your device.</li>
+        <li><strong>Deletion.</strong> Deleting your data from within the app, and removing it from your device and iCloud, is complete for the on-device and iCloud copies. Any data held on a connected backend is governed by that backend operator's own policies and retention practices, and you should direct backend deletion requests to the operator.</li>
+      </ul>
+      <p>If you never enter a Sulis API URL in Settings, none of the above applies and the app behaves as described in the rest of this policy.</p>
+
+      <h2>Your control over your data</h2>
+      <p>Because your data lives on your device and in your iCloud, you remain in control of it:</p>
+      <ul>
+        <li><strong>Export.</strong> You can export your data from within the app.</li>
+        <li><strong>Delete.</strong> You can delete your data from within the app. Deleting the app removes its on-device data; you can also remove its iCloud data from your iCloud settings.</li>
+        <li><strong>Revoke access.</strong> You can revoke Health and connected-service permissions at any time in iOS Settings.</li>
+      </ul>
+
+      <h2>Children's privacy</h2>
+      <p>Sulis is not directed to children under 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children. Sulis is intended for use by adults managing their own health. If you believe a child has provided information to us, please contact us so we can help.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If we update this policy, we will revise the effective date above and post the updated version on this page. Material changes will be made clear.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email <a href="mailto:privacy@sulisapp.com">privacy@sulisapp.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <div>
+        <a class="brand" href="/">
+          <svg class="mark" width="24" height="24" viewBox="0 0 100 100" aria-label="Sulis">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="var(--text-2)" stroke-width="2" opacity=".4"/>
+            <circle cx="50" cy="50" r="33" fill="none" stroke="var(--text-2)" stroke-width="2.6" opacity=".6"/>
+            <circle cx="50" cy="50" r="20.5" fill="none" stroke="var(--text-2)" stroke-width="3.2" opacity=".85"/>
+            <circle cx="50" cy="50" r="8" fill="var(--text-2)"/>
+          </svg>
+          <span class="word" style="font-size:22px; color:var(--text-2)">Sulis</span>
+        </a>
+        <p class="foot-col-tag">A calm health intelligence for iPhone, iPad, and Apple Watch. Private by design.</p>
+      </div>
+      <div>
+        <div class="foot-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:hello@sulisapp.com">hello@sulisapp.com</a>
+        </div>
+        <p class="foot-legal">© 2026 Sulis. Sulis is not a medical device and does not provide medical advice.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
