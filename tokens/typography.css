@@ -3,7 +3,36 @@
    Instrument Serif (editorial display) · Hanken Grotesk (UI)
    · Geist Mono (data, labels, units)
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Geist+Mono:wght@400;500;600&display=swap');
+/* Self-hosted latin subsets (woff2, variable where available) so the real
+   faces load under the site's strict CSP (font-src 'self'). */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/InstrumentSerif-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/InstrumentSerif-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../assets/fonts/HankenGrotesk.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url('../assets/fonts/GeistMono.woff2') format('woff2');
+}
 
 :root {
   --font-display: 'Instrument Serif', ui-serif, Georgia, serif;
